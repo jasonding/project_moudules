@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jason.moudule</groupId>
+    <artifactId>moudule_slf4j-logging</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>moudule_slf4j-logging</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+<!--
+    <repositories>
+        <repository>
+            <id>hrin-nexus-releases</id>
+            <name>hrin-nexus-releases</name>
+            <url>http://116.255.219.248:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>hrin-nexus-snapshot</id>
+            <name>hrin-nexus-snapshot</name>
+            <url>http://116.255.219.248:8081/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <name>hrin-nexus-central</name>
+            <url>http://116.255.219.248:8081/nexus/content/repositories/central/</url>
+        </repository>
+    </repositories>
+    -->
+<!--
+
+    <distributionManagement>
+        <repository>
+            <id>hrin-nexus-releases</id>
+            <name>hrin-nexus-releases</name>
+            <url>http://116.255.219.248:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>hrin-nexus-snapshot</id>
+            <name>hrin-nexus-snapshot</name>
+            <url>http://116.255.219.248:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+-->
+
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+    </dependencies>
+</project>
