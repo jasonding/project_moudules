@@ -13,7 +13,7 @@
 
   <name>moudule_workspace</name>
   <url>http://maven.apache.org</url>
-
+<!--test-->
   <dependencies>
       <dependency>
           <groupId>junit</groupId>
