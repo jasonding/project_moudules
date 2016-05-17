@@ -13,8 +13,26 @@
 
   <name>moudule_workspace</name>
   <url>http://maven.apache.org</url>
-<!--test-->
+    <repositories>
+        <repository>
+            <id>test-nexus-releases</id>
+            <name>test-nexus-releases</name>
+            <url>http://139.129.57.221:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>test-nexus-snapshot</id>
+            <name>test-nexus-snapshot</name>
+            <url>http://139.129.57.221:8081/nexus/content/repositories/snapshots/</url>
+        </repository>
+	<repository>
+            <id>central</id>
+            <name>Central</name>
+            <url>http://139.129.57.221:8081/nexus/content/repositories/central/</url>
+        </repository>
+    </repositories>
+
   <dependencies>
+
       <dependency>
           <groupId>junit</groupId>
           <artifactId>junit</artifactId>
@@ -68,6 +86,19 @@
 
       </dependencies>
   </dependencyManagement>
+<distributionManagement>  
+        <repository>  
+            <id>test-nexus-releases</id>  
+            <name>test-nexus-releases</name>  
+            <url>http://139.129.57.221:8081/nexus/content/repositories/releases/</url>  
+        </repository>  
+  
+        <snapshotRepository>  
+            <id>test-nexus-snapshots</id>  
+            <name>test-nexus-snapshots</name>  
+            <url>http://139.129.57.221:8081/nexus/content/repositories/snapshots/</url>  
+        </snapshotRepository>  
+    </distributionManagement>  
     <build>
         <plugins>
             <plugin>
